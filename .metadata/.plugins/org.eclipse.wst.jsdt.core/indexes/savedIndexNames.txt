@@ -1,5 +1,0 @@
-INDEX VERSION 1.3+E:\GitHub\MagicCubeforIT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2558466660.index
-1902567870.index
-1371534033.index
-65449386.index
