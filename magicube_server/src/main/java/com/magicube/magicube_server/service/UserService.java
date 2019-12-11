@@ -22,4 +22,19 @@ public class UserService {
 		}
 		return null;
 	}
+	
+	public User checkLogin(User user,Model model) {
+		User findUser = userRepository.findByUsername(user.getUsername());
+		if(findUser == null) {
+			model.addAttribute("error","用户名不存在");
+			return null;
+		}else {
+			if(findUser.getPassword().equals(user.getPassword())) {
+				return findUser;
+			}else {
+				model.addAttribute("error","用户名密码不匹配");
+				return null;
+			}
+		}
+	}
 }

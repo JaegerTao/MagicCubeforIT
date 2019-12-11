@@ -18,13 +18,13 @@ public class RegisterController {
 	UserService userService;
 	
 	@RequestMapping(value="/doRegister",method=RequestMethod.POST)
-	public User doRegister(RegisterForm getregister,Model model) {
+	public String doRegister(RegisterForm getregister,Model model) {
 		//数据库表实体类，获取之前注册得到的信息存入数据库中
 		User user = new User(getregister.getName(),getregister.getPhonenumber(),getregister.getEmail(),getregister.getPassword());
 		User addUser = userService.addUser(user,model);
 		if(addUser == null) {
 			return null;
 		}
-		return addUser;
+		return "1";
 	}
 }

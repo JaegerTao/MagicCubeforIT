@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/register.js"></script>
+  <title>人才招聘网站</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">魔方人才招聘网</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">网站首页 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">手机上魔方招聘</a>
+
+
+          <!--这里是用户鼠标放上去后，按钮下面会弹出二维码-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            个人信息
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">我发布的简历</a>
+            <a class="dropdown-item" href="#">我发布的招聘</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">更多</a>
+          </div>
+        </li>
+      </ul>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <div class="btn-group" role="group">
+          <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            登录
+          </button>
+          <div class="dropdown-menu">
+            <form class="px-4 py-3">
+              <div class="form-group">
+                <label for="exampleDropdownFormEmail1">用户名</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="exampleDropdownFormPassword1">密码</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <button id = "login" type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">New around here? Sign up</a>
+            <a class="dropdown-item" href="#">Forgot password?</a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-secondary rbtn" ><a href="signin.html">注册</a></button>
+      </div>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+    </form>
+    </div>
+
+  </nav>
+  <!--conten-->
+
+  <div class="container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#menu0">全职招聘</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">兼职招聘</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">全职简历</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu3">兼职简历</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="menu0" class="container tab-pane active"><br>
+        <div class="change_county">
+          <dl class="choose clearfix text-muted">
+            <dt>分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类:</dt>
+            <dd class="lei-r"><a href="#" class="onChoose">不限</a> <a href="#">销售</a> <a href="#">司机</a> <a
+                href="#">技工/工人</a> <a href="/zpxiaoshoudaibiao/" gjalog="/zhaopin/fenlei@atype=click">销售代表</a> <a
+                href="/zpyingyeyuan/" gjalog="/zhaopin/fenlei@atype=click">营业员/店员</a> <a href="/zpxingzhenghouqin/"
+                gjalog="/zhaopin/fenlei@atype=click">行政/后勤</a> <a href="/zpjiudiancanyin/"
+                gjalog="/zhaopin/fenlei@atype=click">餐饮/酒店</a> <a href="/zpwenmiwenyuan/"
+                gjalog="/zhaopin/fenlei@atype=click">助理/秘书/文员</a> <a href="/zpkefu/"
+                gjalog="/zhaopin/fenlei@atype=click">客服</a> <a href="/zptaobao/"
+                gjalog="/zhaopin/fenlei@atype=click">淘宝职位</a> <a href="/zpdaogou/"
+                gjalog="/zhaopin/fenlei@atype=click">导购</a> <a href="/zpcangkuguanli/"
+                gjalog="/zhaopin/fenlei@atype=click">仓库管理员</a> <a href="/zpdianhuaxiaoshou/"
+                gjalog="/zhaopin/fenlei@atype=click">电话销售</a> <a href="/zpkuaidi/"
+                gjalog="/zhaopin/fenlei@atype=click">快递员</a> <a href="/zprenliziyuan/"
+                gjalog="/zhaopin/fenlei@atype=click">人力资源</a> <a href="/zpbaoan/"
+                gjalog="/zhaopin/fenlei@atype=click">保安</a> <a href="/zpgendanyuan/"
+                gjalog="/zhaopin/fenlei@atype=click">跟单员</a> <a href="/zpshouyinyuan/"
+                gjalog="/zhaopin/fenlei@atype=click">收银员</a> <a href="/zpcaikuai/"
+                gjalog="/zhaopin/fenlei@atype=click">会计</a> <a href="/zpxiaoshouzhuli/"
+                gjalog="/zhaopin/fenlei@atype=click">销售助理</a> <a href="/zpjiaoshi/"
+                gjalog="/zhaopin/fenlei@atype=click">教师</a> <a href="/zpfdcjingjiren/"
+                gjalog="/zhaopin/fenlei@atype=click">房地产经纪人</a> <a href="/zpbaojie/"
+                gjalog="/zhaopin/fenlei@atype=click">保洁</a> <a href="/zpbaomu/"
+                gjalog="/zhaopin/fenlei@atype=click">保姆/护工</a> <a href="/zpcaigou/"
+                gjalog="/zhaopin/fenlei@atype=click">采购员/助理</a> <a href="/zppingmiansheji/"
+                gjalog="/zhaopin/fenlei@atype=click">平面设计</a> <a href="/zpshichanggongguan/"
+                gjalog="/zhaopin/fenlei@atype=click">市场/公关/媒介</a> </dd>
+          </dl>
+          <div class="hr-line">&nbsp;</div>
+          <dl class="choose clearfix">
+            <dt>热门城市:</dt>
+            <dd class="lei-r">
+              <a href="http://bj.ganji.com/zhaopin/">北京</a><a href="http://sh.ganji.com/zhaopin/">上海</a><a
+                href="http://sz.ganji.com/zhaopin/">深圳</a><a href="http://gz.ganji.com/zhaopin/">广州</a><a
+                href="http://cd.ganji.com/zhaopin/">成都</a><a href="http://cq.ganji.com/zhaopin/">重庆</a><a
+                href="http://hz.ganji.com/zhaopin/">杭州</a><a href="http://wh.ganji.com/zhaopin/">武汉</a><a
+                href="http://jn.ganji.com/zhaopin/">济南</a><a href="http://zz.ganji.com/zhaopin/">郑州</a><a
+                href="http://qd.ganji.com/zhaopin/">青岛</a><a href="http://xa.ganji.com/zhaopin/">西安</a><a
+                href="http://hf.ganji.com/zhaopin/">合肥</a><a href="http://nj.ganji.com/zhaopin/">南京</a><a
+                href="http://tj.ganji.com/zhaopin/">天津</a><a href="http://su.ganji.com/zhaopin/">苏州</a><a
+                href="http://sy.ganji.com/zhaopin/">沈阳</a><a href="http://dg.ganji.com/zhaopin/">东莞</a><a
+                href="http://nn.ganji.com/zhaopin/">南宁</a><a href="http://cs.ganji.com/zhaopin/">长沙</a><a
+                href="http://nb.ganji.com/zhaopin/">宁波</a><a href="http://foshan.ganji.com/zhaopin/">佛山</a><a
+                href="http://linyi.ganji.com/zhaopin/">临沂</a><a href="http://weifang.ganji.com/zhaopin/">潍坊</a><a
+                href="http://xm.ganji.com/zhaopin/">厦门</a><a href="http://fz.ganji.com/zhaopin/">福州</a><a
+                href="http://zibo.ganji.com/zhaopin/">淄博</a><a href="http://yantai.ganji.com/zhaopin/">烟台</a><a
+                href="http://nc.ganji.com/zhaopin/">南昌</a><a href="http://ty.ganji.com/zhaopin/">太原</a><a
+                href="http://dl.ganji.com/zhaopin/">大连</a><a href="http://gy.ganji.com/zhaopin/">贵阳</a><a
+                href="http://km.ganji.com/zhaopin/">昆明</a><a href="http://wx.ganji.com/zhaopin/">无锡</a><a
+                href="http://sjz.ganji.com/zhaopin/">石家庄</a><a href="http://www.ganji.com/index.htm">更多城市</a>
+            </dd>
+          </dl>
+
+        </div>
+      </div>
+
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>兼职招聘</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>全职简历</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam.</p>
+    </div>
+    <div id="menu3" class="container tab-pane fade"><br>
+      <h3>兼职简历</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam.</p>
+    </div>
+  </div>
+  </div>
+  <!--footer-->
+  <div>
+    <span class="spandwt">人才招聘&nbsp;Email:**********</span>
+    <span class="spandwt">个人求职&nbsp;Email:*******&nbsp;&nbsp;或垂询:*******</span>
+    <span class="spandwt">未经本招聘网站同意，不得转载本网站之所有招聘信息及作品</span>
+    <span class="spandwt">魔方人才招聘网版权所有&copy;1999-2019</span>
+    <span class="spandwt"><a href="index.html"><img src="images/bottom1.gif" class="imgdwt" /></a></span>
+  </div>
+  </div>
+  <footer>
+    <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+    <p>&copy; 2014 慕课网 </p>
+  </footer>
+</body>
+
+</html>
