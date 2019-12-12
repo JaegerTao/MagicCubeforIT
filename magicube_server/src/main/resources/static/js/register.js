@@ -8,6 +8,7 @@ $(function(){
         if (name == "") {
             $("#nameError").show();
         }else{
+            $("#nameError").hide();
             unempty1 = 1
         }
     })
@@ -16,6 +17,7 @@ $(function(){
         if(phonenumber == ""){
             $("#phonenumberError").show();
         }else{
+            $("#phonenumberError").hide();
             unempty2 = 1
         }
     })
@@ -24,6 +26,7 @@ $(function(){
         if(email == ""){
             $("#emailError").show();
         }else{
+            $("#emailError").hide();
             unempty3 = 1
         }
     })
@@ -32,6 +35,7 @@ $(function(){
         if(password == ""){
             $("#passwordError").show();
         }else{
+            $("#passwordError").hide();
             unempty4 = 1
         }
     })
