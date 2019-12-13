@@ -941,13 +941,13 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 			});
 		},
 		sendGet() {
-			this.$axios.post('http://localhost:8080/index/doLogin', {
+			this.$axios.post('http://localhost:8080/admin/getUser', {
 				params: {
 					name: 'admin',
 					pwd: 'admin'
 				}
 			}).then(resp => {
-				console.log(resp.data);
+				console.log(resp);
 			}).catch(err => {
 				console.log(err);
 			});
@@ -1103,7 +1103,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof="fun
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(63);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_abd34748_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_32213588_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(199);
 function injectStyle (ssrContext) {
   __webpack_require__(200)
 }
@@ -1123,7 +1123,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_abd34748_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_32213588_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -4516,7 +4516,7 @@ var content = __webpack_require__(163);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(201)("7ef8d3ae", content, true, {});
+var update = __webpack_require__(201)("2e1b0b85", content, true, {});
 
 /***/ }),
 /* 201 */
@@ -4781,4 +4781,4 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ })
 ],[126]);
-//# sourceMappingURL=index.js.map?a612ef2df2be96647365
+//# sourceMappingURL=index.js.map?3241dee182862503258b
