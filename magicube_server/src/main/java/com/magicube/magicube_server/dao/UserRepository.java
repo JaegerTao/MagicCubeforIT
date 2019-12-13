@@ -9,4 +9,5 @@ import com.magicube.magicube_server.model.User;//这个接口对User类进行增
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	User findByUsername(String username);
+
 }
