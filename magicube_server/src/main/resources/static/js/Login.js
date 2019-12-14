@@ -14,7 +14,7 @@ $(function(){
                 success:function(result){
                     if(result != null){
                     var username = result.username;
-                    alert("登陆成功");
+                    alert("登录成功");
                     $("#dropdownMenuButton").html(username);
                     $("#Loginchange").html(change1);
                     $("#Loginchange").append(change2);
