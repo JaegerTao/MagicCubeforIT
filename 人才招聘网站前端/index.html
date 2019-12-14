@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>人才招聘网站</title>
+</head>
+
+<body>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+       
+    </ol>
+      <div class="carousel-inner " role="listbox">
+      <div class="carousel-item active">
+          <img src="images/ie-big.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+          <img src="images/lunbo1.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+          <img src="images/lunbo2.jpg" alt="Third slide">
+      </div>
+       
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">魔方人才招聘网</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">网站首页 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">手机上魔方招聘
+
+          </a>
+
+
+          <!--这里是用户鼠标放上去后，按钮下面会弹出二维码-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            个人信息
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">我发布的简历</a>
+            <a class="dropdown-item" href="#">我发布的招聘</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">更多</a>
+          </div>
+        </li>
+      </ul>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <div class="btn-group" role="group">
+          <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            登录
+          </button>
+          <div class="dropdown-menu">
+            <form class="px-4 py-3">
+              <div class="form-group">
+                <label for="exampleDropdownFormEmail1">用户名</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="exampleDropdownFormPassword1">密码</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">New around here? Sign up</a>
+            <a class="dropdown-item" href="#">Forgot password?</a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-secondary rbtn">注册</button>
+      </div>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-md-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索
+      </button>
+    </form>
+    </div>
+
+  </nav>
+  <!--conten-->
+
+  <div class="container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#menu0">全职招聘</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">兼职招聘</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu2">全职简历</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu3">兼职简历</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="menu0" class="container tab-pane active"><br>
+        <div class="change_county">
+          <dl class="choose clearfix ">
+            <dt>分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类:</dt>
+            <dd><a href="#">不限</a> <a href="#">销售</a> <a href="#">司机</a> <a href="#">技工/工人</a> <a href="#">销售代表</a> <a
+                href="#">营业员/店员</a> <a href="#">行政/后勤</a> <a href="#">餐饮/酒店</a> <a href="#">助理/秘书/文员</a> <a
+                href="#">客服</a> <a href="#">淘宝职位</a> <a href="#">导购</a>
+              <a href="#">仓库管理员</a> <a href="#">电话销售</a> <a href="#">快递员</a> <a href="#">人力资源</a> <a href="#">保安</a> <a
+                href="#">跟单员</a> <a href="#">收银员</a> <a href="#">会计</a> <a href="#">销售助理</a> <a href="#">教师</a> <a
+                href="#">房地产经纪人</a> <a href="#">保洁</a> <a href="#">保姆/护工</a> <a href="#">采购员/助理</a> <a href="#">平面设计</a>
+              <a href="#">市场/公关/媒介</a> </dd>
+          </dl>
+          <dl class="choose clearfix">
+            <dt>热门城市:</dt>
+            <dd>
+              <a href="#">北京</a><a href="#">上海</a><a href="#">深圳</a><a href="#">广州</a><a href="#">成都</a><a
+                href="#">重庆</a><a href="#">杭州</a><a href="#p">武汉</a><a href="#">济南</a><a href="#">郑州</a><a
+                href="#">青岛</a><a href="#">西安</a><a href="#">合肥</a><a href="#">南京</a><a href="#">天津</a><a
+                href="#">苏州</a><a href="#">沈阳</a><a href="#">东莞</a><a href="#">南宁</a><a href="#">长沙</a><a
+                href="#">宁波</a><a href="#">佛山</a><a href="#">临沂</a><a href="#">潍坊</a><a href="#">厦门</a><a
+                href="#">福州</a><a href="#">淄博</a><a href="#">烟台</a><a href="#">南昌</a><a href="#">太原</a><a
+                href="#">大连</a><a href="#">贵阳</a><a href="#">昆明</a><a href="#">无锡</a><a href="#">石家庄</a><a
+                href="#">更多城市</a>
+            </dd>
+          </dl>
+
+        </div>
+      </div>
+
+    </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-10">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est inventore qui dignissimos dolorem temporibus commodi, obcaecati nemo delectus ad sed facere quae a sit quo reiciendis adipisci at iure! Iste.
+       </div>
+       <div class="col-md-2">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, in nisi autem debitis vitae doloremque inventore ullam facilis sunt, ratione voluptate repellendus sequi! Mollitia delectus placeat, numquam beatae praesentium eveniet?
+       </div>
+     </div>
+   </div>
+    <!--footer-->
+
+    <footer>
+
+      <span class="spandwt">人才招聘&nbsp;Email:**********</span>
+      <span class="spandwt">个人求职&nbsp;Email:*******&nbsp;&nbsp;或垂询:*******</span>
+      <span class="spandwt">未经本招聘网站同意，不得转载本网站之所有招聘信息及作品</span>
+      <span class="spandwt">魔方人才招聘网版权所有&copy;1999-2019</span>
+      <span class="spandwt"><a href="#"><img src="" /></a></span>
+
+    </footer>
+</body>
+
+</html>
