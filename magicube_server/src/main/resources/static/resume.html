@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>人才招聘网</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/AddResume.js"></script>
+</head>
+<style>
+    .send{
+        text-align: center;
+        margin-top:30px;
+        font-size:large;
+    }
+    .infor{
+        margin:0px auto;
+        width:800px;
+        padding-left: 300px;
+    }
+    #sexcss{
+        float: left;
+    }
+    </style>
+    <body>
+    <div class=send>个人简历</div>
+          <form action="sendresume/dosend" method='post'>
+          <div class=infor>
+                <div id="sexcss">
+                姓名：<input type="text" name="realname" id="realname"/><br/>
+                </div>
+                姓别：<input type="text" name="sex" id="sex"/><br/>
+                年龄：<input type="text" name="age" id="age"/><br/>
+                意向城市：<input type="text" name="city" id="city"/><br/>
+                电话号码：<input type="text" name="telephone" id="telephone"/><br/>
+                邮箱：<input type="text" name="email" id="email"/><br/>
+                意向工作类型：<input type="text" name="jobtype" id="jobtype"/><br/>
+                意向工资：<input type="text" name="salary" id="salary"/><br/>
+                个人介绍：<textarea rows="5" cols="23" name="introduce" id="introduce"></textarea>
+                <input type="button" value="投递" style="display: block;" id="send"/><br/>
+           </div>
+           </form>
+    </body>
+    </html>

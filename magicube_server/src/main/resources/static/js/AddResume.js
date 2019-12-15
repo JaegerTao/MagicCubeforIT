@@ -1,6 +1,6 @@
 var unempty = new Array();
 $(function(){
-    $("#name").blur(function(){
+    /*$("#name").blur(function(){
         var name = $("#name").val();
         if (name == "") {
             $("#nameError").show();
@@ -35,9 +35,9 @@ $(function(){
             $("#passwordError").hide();
             unempty[3] = 1
         }
-    })
-    $("#regis").click(function(){
-    if(unempty[0] != 1){
+    })*/
+    $("#send").click(function(){
+    /*if(unempty[0] != 1){
         $("#nameError").show();
         return ;
     }else if(unempty[1] != 1){
@@ -49,28 +49,33 @@ $(function(){
     }else if(unempty[3] != 1){
         $("#passwordError").show();
         return ;
-    }else{
+    }else{*/
         var data = {
-            "name": $("#name").val(),
-            "phonenumber": $("#phonenumber").val(),
+            "realname": $("#realname").val(),
+            "sex": $("#sex").val(),
+            "age": $("#age").val(),
+            "city": $("#city").val(),
+            "telephone": $("#telephone").val(),
             "email": $("#email").val(),
-            "password": $("#password").val()
+            "jobtype": $("#jobtype").val(),
+            "salary": $("#salary").val(),
+            "introduce": $("#introduce").val(),
              };
         $.ajax({
-            url:'http://localhost:8080/register/doRegister',
+            url:'http://localhost:8080/addresume/doaddresume',
             method:'post',
             data: data,
             dataType:'JSON',
             success:function(result){
+                console.log(result);
                 if(result != null){
-                    alert("注册成功！");
+                    alert("投递成功！");
                 }
             },
             error:function () {
-                alert("注册失败！");
+                alert("投递失败！");
             }
         });
-    }
+    /*}*/
     })
-
 })
