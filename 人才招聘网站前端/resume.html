@@ -3,7 +3,6 @@
 
 <head>
     <title>Home</title>
-    <!-- Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
@@ -16,14 +15,13 @@
             window.scrollTo(0, 1);
         }
     </script>
-    <!-- Meta tags -->
-    <!--stylesheets-->
     <link href="resume.css" rel='stylesheet' media="all">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/AddResume.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!--//style sheet end here-->
 </head>
 
 <body>
@@ -42,7 +40,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">手机上魔方招聘
                     </a>
-                    <!--这里是用户鼠标放上去后，按钮下面会弹出二维码-->
                 </li>
         </div>
         <a class="btn btn-links" href="index.html">返回</a>
@@ -51,42 +48,14 @@
         <div class="art-right-w3ls">
             <h2>发布简历</h2>
             <form action="#" method="post">
-                <!--
-                    <div class="main">
-                    <div class="form-left-to-w3l row">
-                        <div class="col-sm-6 ">
-                            <input type="text" name="name" placeholder="姓名" required="">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" name="sex" placeholder="性别" required="">
-                        </div>
-                    </div>
-                    <div class="form-left-to-w3l row">
-                        <div class="col-sm-6">
-                            <input type="text" name="xueli" placeholder="学历">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" name="age" placeholder="年龄">
-                        </div>
-                    </div>
-                    <div class="form-left-to-w3l row">
-                        <div class="col-sm-6">
-                            <input type="text" name="money" placeholder="期望薪资">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" name="site" placeholder="工作地点">
-                        </div>
-                    </div>
-                </div>
-                -->
                 <div class="form-row">
                     <div class="form-group col-md-5">
                         <span class="label ">姓名</span>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" class="form-control" id="realname">
                     </div>
                     <div class="form-group col-md-5">
                         <span class="label ">性别</span>
-                        <select id="inputState" class="form-control">
+                        <select id="sex" class="form-control">
                             <option selected>男</option>
                             <option>女</option>
                         </select>
