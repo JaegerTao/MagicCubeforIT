@@ -1,5 +1,6 @@
 var change1 = "<div ></div>";
 var change2 = "<a href='#' class='dropdown-item'>我发布的简历</a><a href='#' class='dropdown-item'>我发布的招聘</a>";
+var change3 = "<button id='exit' type='button' class='btn btn-secondary rbtn'>退出</button>"
 function addCookie(name,value,days,path){  /**添加设置cookie**/
     var name = escape(name);
     var value = escape(value);
@@ -49,14 +50,19 @@ function login(){
             dataType:'JSON',
             success:function(result){
                 if(result != null){
-                var userName = result.username;
+                var userName = result.username;//获取cookie
                 var passWord = result.password;
-                addCookie("userName",userName,7,"/");
+                addCookie("userName",userName,7,"/");//设置cookie
                 addCookie("passWord",passWord,7,"/");
                 $("#dropdownMenuButton").html(userName);
                 $("#Loginchange").html(change1);
                 $("#Loginchange").append(change2);
-                $("#exit").html("退出");
+                $("#register").html(change3);
+                $("#exit").click(function(){
+                    addCookie("userName","",7,"/");//退出,设置cookie为空
+                    addCookie("passWord","",7,"/");
+                    window.location.reload()
+                })
                 }
             },
             error:function (data) {
@@ -64,6 +70,8 @@ function login(){
             }
         });
     }
+
+
 $(function(){
         var userNameValue = getCookieValue("userName");
         $("#name").val(userNameValue);
