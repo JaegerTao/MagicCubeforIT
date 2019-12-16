@@ -26,21 +26,7 @@ body {
 	position: relative;
 	width: 500px;
 }
-.job-list-title{
 
-}
-.job-list-salary{
-
-}
-.job-list-address{
-
-}
-.job-list-apply{
-
-}
-.job-list-time{
-
-}
 .morejob{
 	float: right;
 	border: 1px solid lightgray;
@@ -60,5 +46,15 @@ body {
 .carousel-item img{
 	width: 100%;
 	height:300px;
+}
+.celan1{
+	position: fixed;
+	right: 10px;
+	top:48%;
+}
+.celan2{
+	position: fixed;
+	right: 10px;
+	top:57%;
 }
 
