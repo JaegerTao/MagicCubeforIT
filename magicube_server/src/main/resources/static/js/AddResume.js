@@ -3,7 +3,7 @@ $(function(){
     $("#send").click(function(){
         var data = {
             "realname": $("#realname").val(),
-            "sex": $("#sex").val(),
+            "sex": $("#sex").find("option:selected").text(),
             "age": $("#age").val(),
             "city": $("#city").val(),
             "telephone": $("#telephone").val(),
