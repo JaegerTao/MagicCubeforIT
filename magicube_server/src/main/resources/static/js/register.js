@@ -1,7 +1,4 @@
-var unempty1 = 0;
-var unempty2 = 0;
-var unempty3 = 0;
-var unempty4 = 0;
+var unempty = new Array();
 $(function(){
     $("#name").blur(function(){
         var name = $("#name").val();
@@ -9,7 +6,7 @@ $(function(){
             $("#nameError").show();
         }else{
             $("#nameError").hide();
-            unempty1 = 1
+            unempty[0] = 1
         }
     })
     $("#phonenumber").blur(function(){
@@ -18,7 +15,7 @@ $(function(){
             $("#phonenumberError").show();
         }else{
             $("#phonenumberError").hide();
-            unempty2 = 1
+            unempty[1] = 1
         }
     })
     $("#email").blur(function(){
@@ -27,7 +24,7 @@ $(function(){
             $("#emailError").show();
         }else{
             $("#emailError").hide();
-            unempty3 = 1
+            unempty[2] = 1
         }
     })
     $("#password").blur(function(){
@@ -36,20 +33,20 @@ $(function(){
             $("#passwordError").show();
         }else{
             $("#passwordError").hide();
-            unempty4 = 1
+            unempty[3] = 1
         }
     })
     $("#regis").click(function(){
-    if(unempty1 != 1){
+    if(unempty[0] != 1){
         $("#nameError").show();
         return ;
-    }else if(unempty2 != 1){
+    }else if(unempty[1] != 1){
         $("#phonenumberError").show();
         return ;
-    }else if(unempty3 != 1){
+    }else if(unempty[2] != 1){
         $("#emailError").show();
         return ;
-    }else if(unempty4 != 1){
+    }else if(unempty[3] != 1){
         $("#passwordError").show();
         return ;
     }else{
