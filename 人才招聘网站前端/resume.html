@@ -3,27 +3,14 @@
 
 <head>
     <title>Home</title>
-    <!-- Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-    <!-- Meta tags -->
-    <!--stylesheets-->
     <link href="resume.css" rel='stylesheet' media="all">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!--//style sheet end here-->
 </head>
 
 <body>
@@ -48,10 +35,11 @@
         <a class="btn btn-links" href="index.html">返回</a>
     </nav>
     <div class="mid-class">
-        <div class="art-right-w3ls">
-            <h2>发布简历</h2>
-            <form action="#" method="post"  class="form">
-
+        <div class="container">
+            <div class="title">
+                <h1 class="color">我的简历</h1>
+            </div>
+            <form action="#" method="post" class="form col-md-6">
                 <div class="form-row">
                     <div class="form-group col-md-5">
                         <span class="label ">姓名</span>
@@ -59,7 +47,7 @@
                     </div>
                     <div class="form-group col-md-5">
                         <span class="label ">性别</span>
-                        <select id="inputState" class="form-control">
+                        <select  class="form-control">
                             <option selected>男</option>
                             <option>女</option>
                         </select>
@@ -106,15 +94,9 @@
                 </div>
                 <div class="clear"></div>
                 <div class="btnn">
-                    <button type="submit">快速发布</button>
+                    <button class="btn btn-success col-md-10" type="submit">快速发布</button>
                 </div>
             </form>
-
-        </div>
-        <div class="art-left-w3ls">
-            <h1 class="header-w3ls">
-                魔方人才招聘网
-            </h1>
         </div>
     </div>
 </body>

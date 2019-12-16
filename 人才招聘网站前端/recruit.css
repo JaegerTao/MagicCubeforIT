@@ -1,6 +1,4 @@
 
-
-
 img {
 	max-width: 100%;
 }
@@ -35,7 +33,7 @@ textarea {
 body {
 	/* position: relative;*/
 	padding-top: 100px ;
-	background: url(images/b1.jpg);
+	background: url(images/zhaopin.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -65,5 +63,5 @@ form{
 	margin-left:30%;
 }
 .color{
-	color:yellowgreen;
+	color:rgba(101, 214, 26, 0.733);
 }
