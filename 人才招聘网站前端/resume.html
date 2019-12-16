@@ -8,7 +8,9 @@
     <meta name="keywords" content="" />
     <link href="resume.css" rel='stylesheet' media="all">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/AddResume.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
@@ -29,7 +31,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">手机上魔方招聘
                     </a>
-                    <!--这里是用户鼠标放上去后，按钮下面会弹出二维码-->
                 </li>
         </div>
         <a class="btn btn-links" href="index.html">返回</a>
@@ -43,7 +44,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-5">
                         <span class="label ">姓名</span>
-                        <input type="text" class="form-control" id="name">
+                        <input id="realname" type="text" class="form-control">
                     </div>
                     <div class="form-group col-md-5">
                         <span class="label ">性别</span>
@@ -56,30 +57,30 @@
                 <div class="form-row">
                     <div class="form-group col-md-5">
                         <span class="label">年龄</span>
-                        <input type="text" class="form-control">
+                        <input id="age" type="text" class="form-control">
                     </div>
                     <div class="form-group col-md-5">
                         <span class="label">期望岗位</span>
-                        <input type="text" class="form-control">
+                        <input id="jobtype" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-row ">
                     <div class="form-group col-md-10">
                         <span class="label">E-Mail</span>
-                        <input type="email" class="form-control">
+                        <input id="email" type="email" class="form-control">
                     </div>
 
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-10">
                         <span class="label">电话号码</span>
-                        <input type="text" class="form-control">
+                        <input id="telephone" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-5">
                         <span class="label">期望薪资</span>
-                        <input type="text" class="form-control">
+                        <input id="salary" type="text" class="form-control">
                     </div>
                     <div class="form-group col-md-5">
                         <span class="label">工作地点</span>
@@ -89,7 +90,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-10">
                         <span class="label">个人介绍</span>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea id="introduce" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="clear"></div>

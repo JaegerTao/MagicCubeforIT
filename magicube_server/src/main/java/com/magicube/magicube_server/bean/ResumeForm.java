@@ -1,6 +1,7 @@
 package com.magicube.magicube_server.bean;
 
 public class ResumeForm {
+	private String username;
 	private String realname;
 	private String sex;
 	private String age;
@@ -17,8 +18,9 @@ public class ResumeForm {
 	
 	
 
-	public ResumeForm(String realname, String sex, String age, String city, String telephone, String email,
+	public ResumeForm(String username, String realname, String sex, String age, String city, String telephone, String email,
 			String jobtype, String salary, String introduce) {
+		this.username = username;
 		this.realname = realname;
 		this.sex = sex;
 		this.age = age;
@@ -31,6 +33,18 @@ public class ResumeForm {
 	}
 	
 	
+	public String getUsername() {
+		return username;
+	}
+
+
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
+
 	public String getSex() {
 		return sex;
 	}
