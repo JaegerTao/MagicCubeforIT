@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>人才招聘网</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/AddEmploy.js"></script>
+</head>
+<style>
+    .send{
+        text-align: center;
+        margin-top:30px;
+        font-size:large;
+    }
+    .infor{
+        margin:0px auto;
+        width:800px;
+        padding-left: 300px;
+    }
+    #sexcss{
+        float: left;
+    }
+    </style>
+    <body>
+    <div class=send>个人简历</div>
+          <form action="sendresume/dosend" method='post'>
+          <div class=infor>
+                <div id="sexcss">
+                职位名称：<input type="text" name="jobname" id="jobname"/><br/>
+                </div>
+                薪资待遇：<input type="text" name="pay" id="pay"/><br/>
+                最低学历：<input type="text" name="education" id="education"/><br/>
+                工作经验：<input type="text" name="workexperience" id="workexperience"/><br/>
+                年龄：<input type="text" name="age" id="age"/><br/>
+                招聘人数：<input type="text" name="employnumber" id="employnumber"/><br/>
+                联系电话：<input type="text" name="askphone" id="askphone"/><br/>
+                工作地点：<input type="text" name="workaddress" id="workaddress"/><br/>
+                工作时间：<textarea rows="5" cols="23" name="worktime" id="worktime"></textarea>
+                <input type="button" value="发布" style="display: block;" id="publish"/><br/>
+           </div>
+           </form>
+    </body>
+    </html>
