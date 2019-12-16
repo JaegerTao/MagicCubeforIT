@@ -1,6 +1,8 @@
 var change1 = "<div ></div>";
-var change2 = "<a href='#' class='dropdown-item'>我发布的简历</a><a href='#' class='dropdown-item'>我发布的招聘</a>";
-var change3 = "<button id='exit' type='button' class='btn btn-secondary rbtn'>退出</button>"
+var change2 = "<a href='resume.html' class='dropdown-item'>我发布的简历</a><a href='#' class='dropdown-item'>我发布的招聘</a>";
+var change3 = "<button id='exit' type='button' class='btn btn-secondary rbtn'>退出</button>";
+var userNameValue;
+var userPassValue;
 function addCookie(name,value,days,path){  /**添加设置cookie**/
     var name = escape(name);
     var value = escape(value);
@@ -31,13 +33,13 @@ function getCookieValue(name){ /**获取cookie的值，根据cookie的键获取�
     }else{ //搜索失败，返回空字符串
       return "";
     }
-  }
-  function deleteCookie(name,path){  /**根据cookie的键，删除cookie，其实就是设置其失效**/
+}
+function deleteCookie(name,path){  /**根据cookie的键，删除cookie，其实就是设置其失效**/
     var name = escape(name);
     var expires = new Date(0);
     path = path == "" ? "" : ";path=" + path;
     document.cookie = name + "="+ ";expires=" + expires.toUTCString() + path;
-  }
+}
 function login(){
     var data = {
         "name": $("#name").val(),
@@ -73,9 +75,9 @@ function login(){
 
 
 $(function(){
-        var userNameValue = getCookieValue("userName");
-        $("#name").val(userNameValue);
-        var userPassValue = getCookieValue("passWord");
+        userNameValue = getCookieValue("userName");//获取cookie的值
+        $("#name").val(userNameValue);//把name那行输入框加入cookie的值，也就是用户名
+        userPassValue = getCookieValue("passWord");
         $("#password").val(userPassValue);
         if(userNameValue != null && userNameValue !="" && userPassValue != null && userPassValue !=""){
             login();

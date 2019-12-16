@@ -2,6 +2,7 @@ var unempty = new Array();
 $(function(){
     $("#send").click(function(){
         var data = {
+            "username": userNameValue,
             "realname": $("#realname").val(),
             "sex": $("#sex").find("option:selected").text(),
             "age": $("#age").val(),
@@ -18,7 +19,6 @@ $(function(){
             data: data,
             dataType:'JSON',
             success:function(result){
-                console.log(result);
                 if(result != null){
                     alert("投递成功！");
                 }

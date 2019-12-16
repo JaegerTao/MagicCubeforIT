@@ -16,6 +16,7 @@ public class Resume {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	
 	private Long id;/*id只读*/
+	private String username;
 	private String realname;
 	private String sex;
 	private String age;
@@ -31,8 +32,9 @@ public class Resume {
 	}
 
 	
-	public Resume(String realname, String sex, String age, String city, String telephone, String email, String jobtype,
+	public Resume(String username, String realname, String sex, String age, String city, String telephone, String email, String jobtype,
 			String salary, String introduce) {
+		this.username = username;
 		this.realname = realname;
 		this.sex = sex;
 		this.age = age;
@@ -45,6 +47,16 @@ public class Resume {
 	}
 
 	
+	public String getUsername() {
+		return username;
+	}
+
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
 	public String getSex() {
 		return sex;
 	}
