@@ -18,7 +18,7 @@
     </script>
     <!-- Meta tags -->
     <!--stylesheets-->
-    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    <link href="resume.css" rel='stylesheet' media="all">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
@@ -51,7 +51,8 @@
         <div class="art-right-w3ls">
             <h2>发布简历</h2>
             <form action="#" method="post">
-                <div class="main">
+                <!--
+                    <div class="main">
                     <div class="form-left-to-w3l row">
                         <div class="col-sm-6 ">
                             <input type="text" name="name" placeholder="姓名" required="">
@@ -75,6 +76,49 @@
                         <div class="col-sm-6">
                             <input type="text" name="site" placeholder="工作地点">
                         </div>
+                    </div>
+                </div>
+                -->
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <span class="label ">姓名</span>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <span class="label ">性别</span>
+                        <select id="inputState" class="form-control">
+                            <option selected>男</option>
+                            <option>女</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="form-group col-md-10">
+                        <span class="label">E-Mail</span>
+                        <input type="email" class="form-control">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+                        <span class="label">电话号码</span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <span class="label">期望薪资</span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <span class="label">工作地点</span>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+                        <span class="label">个人介绍</span>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="clear"></div>
