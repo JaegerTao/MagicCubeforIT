@@ -10,7 +10,8 @@ body {
 }
 
 .setwidth {
-	padding: 20px;
+    padding: 20px;
+    display: block;
 }
 
 .textcenter {
