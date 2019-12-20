@@ -73,15 +73,7 @@ body {
 	margin-bottom: -30px;
 }
 
+.set-center {
+	text-align: center;
 
-.listcontrol {
-    list-style: none;
-}
-
-.listcontrol li {
-    display: inline-block;
-}
-
-.name {
-    text-align: center;
 }
