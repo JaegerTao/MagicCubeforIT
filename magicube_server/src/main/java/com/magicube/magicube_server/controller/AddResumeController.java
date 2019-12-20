@@ -24,7 +24,7 @@ public class AddResumeController {
 	@RequestMapping(value="/doaddresume",method=RequestMethod.POST)
 	public Resume dosend(ResumeForm getresume,Model model) {
 		//数据库表实体类，获取之前注册得到的信息存入数据库中
-		Resume user = new Resume(getresume.getRealname(),getresume.getSex(),getresume.getAge(),getresume.getCity(),getresume.getTelephone(),getresume.getEmail(),getresume.getJobtype(),getresume.getSalary(),getresume.getIntroduce());
+		Resume user = new Resume(getresume.getUsername(),getresume.getRealname(),getresume.getSex(),getresume.getAge(),getresume.getCity(),getresume.getTelephone(),getresume.getEmail(),getresume.getJobtype(),getresume.getSalary(),getresume.getIntroduce());
 		Resume addresume = ResumeService.addResume(user,model);
 		if(addresume == null) {
 			return null;

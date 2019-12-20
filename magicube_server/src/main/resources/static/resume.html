@@ -1,44 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>人才招聘网</title>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <link href="css/resume.css" rel='stylesheet' media="all">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/ajax.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/Login.js"></script>
     <script src="js/AddResume.js"></script>
 </head>
-<style>
-    .send{
-        text-align: center;
-        margin-top:30px;
-        font-size:large;
-    }
-    .infor{
-        margin:0px auto;
-        width:800px;
-        padding-left: 300px;
-    }
-    #sexcss{
-        float: left;
-    }
-    </style>
-    <body>
-    <div class=send>个人简历</div>
-          <form action="sendresume/dosend" method='post'>
-          <div class=infor>
-                <div id="sexcss">
-                姓名：<input type="text" name="realname" id="realname"/><br/>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">魔方人才招聘网</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">网站首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">手机上魔方招聘
+                    </a>
+                </li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <div class="btn-group" role="group">
+                  <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    登录
+                  </button>
+                  <div class="dropdown-menu" id="Loginchange">
+                    <form class="px-4 py-3">
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">用户名</label>
+                        <input id="name" type="text" class="form-control"  placeholder="Username">
+                        <!--<input id="name" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Username">-->
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">密码</label>
+                        <input id="password" type="password" class="form-control"  placeholder="Password">
+                        <!--<input id="password" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">-->
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                      <input type="button" id = "login" type="submit" class="btn btn-primary" value="Sign in">
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+                  </div>
                 </div>
-                姓别：<input type="text" name="sex" id="sex"/><br/>
-                年龄：<input type="text" name="age" id="age"/><br/>
-                意向城市：<input type="text" name="city" id="city"/><br/>
-                电话号码：<input type="text" name="telephone" id="telephone"/><br/>
-                邮箱：<input type="text" name="email" id="email"/><br/>
-                意向工作类型：<input type="text" name="jobtype" id="jobtype"/><br/>
-                意向工资：<input type="text" name="salary" id="salary"/><br/>
-                个人介绍：<textarea rows="5" cols="23" name="introduce" id="introduce"></textarea>
-                <input type="button" value="投递" style="display: block;" id="send"/><br/>
-           </div>
-           </form>
-    </body>
-    </html>
+                <div id="register">
+                <button type="button" class="btn btn-secondary rbtn">注册</button>
+                </div>
+              </div>
+        </div>
+        <a class="btn btn-links" href="index.html">返回</a>
+    </nav>
+    <div class="mid-class">
+        <div class="art-right-w3ls">
+            <h2>发布简历</h2>
+            <form action="#" method="post"  class="form">
+
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <span class="label ">姓名</span>
+                        <input id="realname" type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <span class="label ">性别</span>
+                        <select id="sex" class="form-control">
+                            <option selected>male</option>
+                            <option>female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <span class="label">年龄</span>
+                        <input id="age" type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <span class="label">期望岗位</span>
+                        <input id="jobtype" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="form-group col-md-10">
+                        <span class="label">E-Mail</span>
+                        <input id="email" type="email" class="form-control">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+                        <span class="label">电话号码</span>
+                        <input id="telephone" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <span class="label">期望薪资</span>
+                        <input id="salary" type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <span class="label">工作地点</span>
+                        <input id="city" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+                        <span class="label">个人介绍</span>
+                        <textarea id="introduce" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="btnn">
+                    <input type="button" value="快速发布" id="send"/>
+                </div>
+            </form>
+
+        </div>
+        <div class="art-left-w3ls">
+            <h1 class="header-w3ls">
+                魔方人才招聘网
+            </h1>
+        </div>
+    </div>
+</body>
+
+</html>
